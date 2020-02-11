@@ -38,6 +38,16 @@ radio button and checkbox tabs.</p>
             <input type="text" class="form-control" id="ccName" placeholder="Pat Johnson" name="ccName"
                    required>
         </div>
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Captain" name="firstName"
+                value="<%= locals.dsConfig.firstName %>" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Marvel" name="lastName"
+                value="<%= locals.dsConfig.lastName %>" required>
+        </div>
         <input type="hidden" name="_csrf" value="<%- csrfToken %>">
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

@@ -2,13 +2,17 @@
 // Either fill in the data below or set the environment variables
 //
 exports.config = {
-    dsClientId: process.env.DS_CLIENT_ID || '{CLIENT_ID}' // The app's DocuSign integration key
-    , dsClientSecret: process.env.DS_CLIENT_SECRET || '{CLIENT_SECRET}' // The app's DocuSign integration key's secret
-    , signerEmail: process.env.DS_SIGNER_EMAIL || '{USER_EMAIL}'
-    , signerName: process.env.DS_SIGNER_NAME || '{USER_FULLNAME}'
+    dsClientId: process.env.DS_CLIENT_ID || '67b44049-ea3b-4015-9a51-b3d4d1c4f029' //'{CLIENT_ID}' // The app's DocuSign integration key
+    , dsClientSecret: process.env.DS_CLIENT_SECRET || '730b76eb-fe03-4ce0-bdfc-2e277402d775' //'{CLIENT_SECRET}' // The app's DocuSign integration key's secret
+    , signerEmail: process.env.DS_SIGNER_EMAIL || 'johnygoodel@yahoo.com' //'{USER_EMAIL}'
+    , signerName: process.env.DS_SIGNER_NAME || 'Johny Goodel'//'{USER_FULLNAME}'
     , appUrl: process.env.DS_APP_URL || 'http://localhost:5000' // The url of the application. Eg http://localhost:5000
     // NOTE: You must add a Redirect URI of appUrl/ds/callback to your Integration Key.
     // Example: http://localhost:5000/ds/callback
+    // Added by DT for CoD
+    , firstName: process.env.DS_FIRST_NAME || ''
+    , lastName: process.env.DS_LAST_NAME || ''
+    // End of addition by DT
     , production: false
     , debug: true // Send debugging statements to console
     , sessionSecret: '12345' // Secret for encrypting session cookie content
